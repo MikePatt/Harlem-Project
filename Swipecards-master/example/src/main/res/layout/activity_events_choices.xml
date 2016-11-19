@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="com.lorentzos.swipecards.EventsChoices">
+
+
+    <TextView
+        android:id="@+id/tvScoreMate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H3"
+        android:textSize="35dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What would you like to do?"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/tvScoreMate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/bFood"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/bEntertainment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/bEntertainment"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entertainment"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/bVolunteering"
+        android:layout_marginBottom="28dp" />
+    <Button
+        android:id="@+id/bVolunteering"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volunteer"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
